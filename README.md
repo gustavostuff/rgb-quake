@@ -5,7 +5,7 @@
 * Connect to you Raspberry Pi via SSH
 * Run the next command:
 ```command pending````
-* When everything is done, go to RGB-Pi optins screen and do a Games Search
+* When everything is done, go to RGB-Pi options screen and do a Games Search
 * Enjoy
 
 ### Links
