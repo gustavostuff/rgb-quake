@@ -10,8 +10,8 @@
 
 ### Links
 
-[RGB-Pi](https://www.rgb-pi.com/)
-[TyrQuake](https://docs.libretro.com/library/tyrquake/)
-[Quake](https://en.wikipedia.org/wiki/Quake_(video_game))
-[Raspberry Pi](https://www.raspberrypi.org/)
-[RetroPie](https://retropie.org.uk/)
+* [RGB-Pi](https://www.rgb-pi.com/)
+* [TyrQuake](https://docs.libretro.com/library/tyrquake/)
+* [Quake](https://en.wikipedia.org/wiki/Quake_(video_game))
+* [Raspberry Pi](https://www.raspberrypi.org/)
+* [RetroPie](https://retropie.org.uk/)
