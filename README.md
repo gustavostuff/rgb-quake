@@ -2,7 +2,7 @@
 
 ## Pixel-perfect libretro TyrQuake for RGB-Pi OS
 
-### Instalation
+### Installation
 
 * Connect to you Raspberry Pi via SSH
 * Run:
