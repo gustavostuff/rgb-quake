@@ -61,7 +61,7 @@ else
   echo -e "${red}Remember: only pak0 for id1 Quake is included!${default}"
   separator
   echo ''
-  echo 'For more info go to github.com/tavuntu/quake-for-rgb-pi'
+  echo 'For more info go to github.com/tavuntu/rgb-quake'
 
   # more cleaning:
   rm quake*tar.gz
