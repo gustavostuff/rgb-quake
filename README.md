@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/rgb-quake
 ```
 * Follow the instructions and enjoy!
 
-**PLEASE NOTE:** pak files are not included, you'll have to grab them from another Quake installation. *.pak files must be placed in ~/quake/ as follows:
+**PLEASE NOTE:** .pak files are not included, you'll have to grab them from another Quake installation. The files must be placed in ~/quake/ as follows:
 
 * ~/quake/id1/ - for the original Quake
 * ~/quake/mp1/ - for Scourge of Armagon
