@@ -67,7 +67,7 @@ else
   sudo bash ~/RetroPie-Setup/retropie_packages.sh lr-tyrquake
 
   separator
-  echo -e "${green}Done! Now go to RGB-Pi options screen, do a game search, and you're all set!${default}"
+  echo -e "${green}Done! Now go to RGB-Pi options screen, do a game search.${default}"
   echo -e "${red}Remember: .pak files are not included!${default}"
   separator
   echo 'For more info go to github.com/tavuntu/quake-for-rgb-pi'
