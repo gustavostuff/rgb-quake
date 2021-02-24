@@ -4,9 +4,9 @@
 
 * Connect to you Raspberry Pi via SSH
 * Run the next command:
-```command pending```
-* When everything is done, go to RGB-Pi options screen and do a Games Search
-* Enjoy
+
+```curl -s https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/setup.sh | bash -s```
+* Follow the instructions and enjoy!
 
 ### Links
 
@@ -16,5 +16,8 @@
 * [Raspberry Pi](https://www.raspberrypi.org/)
 * [RetroPie](https://retropie.org.uk/)
 
+A picture of it running in a Trinitron KV-29FS120:
+[![quake.jpg](https://i.postimg.cc/C5Zf4wCC/quake.jpg)](https://postimg.cc/m1sDLf5h)
 
-**Please note**, pak files are not included, you'll have to grab them from another Quake installation
+
+**PLEASE NOTE:** pak files are not included, you'll have to grab them from another Quake installation.
