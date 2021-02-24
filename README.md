@@ -25,7 +25,6 @@ wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/rgb-quake
 ![](https://i.postimg.cc/T3yT0Qs6/quake2.jpg)
 ![](https://i.postimg.cc/DzLnk0Fp/quake3.jpg)
 ![](https://i.postimg.cc/3Rh7Khx8/quake4.jpg)
-[![quake.jpg](https://i.postimg.cc/C5Zf4wCC/quake.jpg)](https://postimg.cc/m1sDLf5h)
 
 ### Some Links
 
