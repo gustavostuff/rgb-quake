@@ -17,9 +17,6 @@ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABI
 CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 '
 
-function separator () {
-  echo "******************************************************************"
-}
 installed='no'
 red='\033[0;31m'
 green='\033[0;32m'
@@ -34,8 +31,6 @@ if [ $answer = 'y' ]; then
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake.tar.gz
   tar -xf quake.tar.gz
   installed='yes'
-
-  separator
 else
   echo "Not a yes, so I'll take as a no..."
 fi
@@ -47,8 +42,6 @@ if [ $answer = 'y' ]; then
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_1.tar.gz
   tar -xf quake_mission_pack_1.tar.gz
   installed='yes'
-
-  separator
 else
   echo "Not a yes, so I'll take as a no..."
 fi
@@ -60,8 +53,6 @@ if [ $answer = 'y' ]; then
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_2.tar.gz
   tar -xf quake_mission_pack_2.tar.gz
   installed='yes'
-  
-  separator
 else
   echo "Not a yes, so I'll take as a no..."
 fi
@@ -71,13 +62,7 @@ if [ $installed = 'no' ]; then
 else
   echo 'Installing now TyQuake...'
   sudo bash ~/RetroPie-Setup/retropie_packages.sh lr-tyrquake
-  separator
   echo -e "${green}Done! Now go to RGB-Pi options screen, do a game search, and you're all set!${default}"
-  
-  separator
-  separator
   echo -e "${red}And remember, .pak files are not included!${default}"
-  separator
-  separator
   echo 'For more info go to github.com/tavuntu/quake-for-rgb-pi'
 fi
