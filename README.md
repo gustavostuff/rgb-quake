@@ -4,7 +4,7 @@
 
 ### Installation
 
-* Connect to you Raspberry Pi via SSH
+* Connect to your Raspberry Pi via SSH
 * Run:
 
 ```
