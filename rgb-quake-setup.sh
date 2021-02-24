@@ -27,8 +27,8 @@ default='\033[0m'
 
 cd ~
 
-echo 'Install original Quake I config files? [y/n]'
-read answer
+read -p 'Install original Quake I config files? [Y/n]' answer
+answer=${name:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake.tar.gz
@@ -38,8 +38,8 @@ if [ $answer = 'y' ]; then
   separator
 fi
 
-echo 'Install Scourge of Armagon launcher? [y/n]'
-read answer
+read -p 'Install Scourge of Armagon launcher? [Y/n]' answer
+answer=${name:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_1.tar.gz
@@ -49,8 +49,8 @@ if [ $answer = 'y' ]; then
   separator
 fi
 
-echo 'Install Dissolution of Eternity launcher? [y/n]'
-read answer
+read -p 'Install Dissolution of Eternity launcher? [Y/n]' answer
+answer=${name:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_2.tar.gz
@@ -70,14 +70,13 @@ else
   echo -e "${red}Remember: .pak files are not included!${default}"
   separator
   echo 'For more info go to github.com/tavuntu/quake-for-rgb-pi'
+  separator
+
+  # cleaning:
+  rm quake.tar.gz
+  rm quake_mission_pack_1.tar.gz
+  rm quake_mission_pack_2.tar.gz
+  rm rgb-quake-setup.sh
+  rm RetroPie/roms/ports/Quake.sh
+  rm -rf RetroPie/roms/ports/quake/
 fi
-
-separator
-
-# cleaning:
-rm quake.tar.gz
-rm quake_mission_pack_1.tar.gz
-rm quake_mission_pack_2.tar.gz
-rm rgb-quake-setup.sh
-rm RetroPie/roms/ports/Quake.sh
-rm -rf RetroPie/roms/ports/quake/
