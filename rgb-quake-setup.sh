@@ -63,19 +63,17 @@ fi
 if [ $installed = 'no' ]; then
   echo "Nothing? Pfft... your loss."
 else
-  echo 'Installing now libretro TyrQuake...'
+  echo -e "${green}Installing now libretro TyrQuake...${default}"
   sudo bash ~/RetroPie-Setup/retropie_packages.sh lr-tyrquake
+
   separator
   echo -e "${green}Done! Now go to RGB-Pi options screen, do a game search, and you're all set!${default}"
   echo -e "${red}Remember: .pak files are not included!${default}"
   separator
   echo 'For more info go to github.com/tavuntu/quake-for-rgb-pi'
-  separator
 
   # cleaning:
-  rm quake.tar.gz
-  rm quake_mission_pack_1.tar.gz
-  rm quake_mission_pack_2.tar.gz
+  rm quake*tar.gz
   rm rgb-quake-setup.sh
   rm RetroPie/roms/ports/Quake.sh
   rm -rf RetroPie/roms/ports/quake/
