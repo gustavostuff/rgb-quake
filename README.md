@@ -1,11 +1,11 @@
+[![logo-rgb-quake.png](https://i.postimg.cc/DZqBQkhM/logo-rgb-quake.png)](https://postimg.cc/hztLgYfL)
+
 ## Pixel-perfect libretro TyrQuake for RGB-Pi OS
 
 ### Instalation
 
 * Connect to you Raspberry Pi via SSH
-* Run the next command:
-
-```curl -s https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/setup.sh | bash -s```
+* Run: ```wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/rgb-quake-setup.sh && chmod +x rgb-quake-setup.sh && ./rgb-quake-setup.sh```
 * Follow the instructions and enjoy!
 
 **PLEASE NOTE:** pak files are not included, you'll have to grab them from another Quake installation.
