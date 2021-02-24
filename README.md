@@ -5,7 +5,11 @@
 ### Instalation
 
 * Connect to you Raspberry Pi via SSH
-* Run: ```wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/rgb-quake-setup.sh && chmod +x rgb-quake-setup.sh && ./rgb-quake-setup.sh```
+* Run:
+
+```
+wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/rgb-quake-setup.sh && chmod +x rgb-quake-setup.sh && ./rgb-quake-setup.sh
+```
 * Follow the instructions and enjoy!
 
 **PLEASE NOTE:** pak files are not included, you'll have to grab them from another Quake installation.
