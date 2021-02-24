@@ -29,35 +29,44 @@ cd ~
 
 echo 'Install original Quake I config files? [y/n]'
 read answer
-if [ '$answer' = 'y' ]; then
+if [ $answer = 'y' ]; then
   echo "Downloading..."
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake.tar.gz
   tar -xf quake.tar.gz
   installed='yes'
+
   separator
+else
+  echo "Not a yes, so I'll take as a no..."
 fi
 
 echo 'Install Scourge of Armagon launcher? [y/n]'
 read answer
-if [ '$answer' = 'y' ]; then
+if [ $answer = 'y' ]; then
   echo "Downloading..."
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_1.tar.gz
   tar -xf quake_mission_pack_1.tar.gz
   installed='yes'
+
   separator
+else
+  echo "Not a yes, so I'll take as a no..."
 fi
 
 echo 'Install Dissolution of Eternity launcher? [y/n]'
 read answer
-if [ '$answer' = 'y' ]; then
+if [ $answer = 'y' ]; then
   echo "Downloading..."
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_2.tar.gz
   tar -xf quake_mission_pack_2.tar.gz
   installed='yes'
+  
   separator
+else
+  echo "Not a yes, so I'll take as a no..."
 fi
 
-if [ '$installed' = 'no' ]; then
+if [ $installed = 'no' ]; then
   echo "Nothing? Pfft... your loss."
 else
   echo 'Installing now TyQuake...'
