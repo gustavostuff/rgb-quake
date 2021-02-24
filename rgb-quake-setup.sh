@@ -36,8 +36,6 @@ if [ $answer = 'y' ]; then
   installed='yes'
   
   separator
-else
-  echo "Not a yes, so I'll take as a no..."
 fi
 
 echo 'Install Scourge of Armagon launcher? [y/n]'
@@ -49,8 +47,6 @@ if [ $answer = 'y' ]; then
   installed='yes'
 
   separator
-else
-  echo "Not a yes, so I'll take as a no..."
 fi
 
 echo 'Install Dissolution of Eternity launcher? [y/n]'
@@ -62,22 +58,23 @@ if [ $answer = 'y' ]; then
   installed='yes'
   
   separator
-else
-  echo "Not a yes, so I'll take as a no..."
 fi
 
 if [ $installed = 'no' ]; then
   echo "Nothing? Pfft... your loss."
 else
-  echo 'Installing now TyQuake...'
+  echo 'Installing now libretro TyrQuake...'
   sudo bash ~/RetroPie-Setup/retropie_packages.sh lr-tyrquake
   separator
   echo -e "${green}Done! Now go to RGB-Pi options screen, do a game search, and you're all set!${default}"
-  
-  separator
-  separator
-  echo -e "${red}And remember, .pak files are not included!${default}"
-  separator
+  echo -e "${red}Remember: .pak files are not included!${default}"
   separator
   echo 'For more info go to github.com/tavuntu/quake-for-rgb-pi'
 fi
+
+separator
+echo 'Cleaning...'
+rm quake.tar.gz
+rm quake_mission_pack_1.tar.gz
+rm quake_mission_pack_2.tar.gz
+rm rgb-quake-setup.sh
