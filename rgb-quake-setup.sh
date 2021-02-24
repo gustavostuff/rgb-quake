@@ -60,6 +60,8 @@ if [ $answer = 'y' ]; then
   separator
 fi
 
+rm rgb-quake-setup.sh
+
 if [ $installed = 'no' ]; then
   echo "Nothing? Pfft... your loss."
 else
@@ -74,7 +76,6 @@ else
 
   # cleaning:
   rm quake*tar.gz
-  rm rgb-quake-setup.sh
   rm RetroPie/roms/ports/Quake.sh
   rm -rf RetroPie/roms/ports/quake/
   rm -rf RetroPie/roms/ports/Quake/
