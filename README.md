@@ -20,7 +20,7 @@ wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/rgb-quake
 
 ---
 
-Some pictures on a Trinitron KV-29FS120 (not a good Camera, it looks better in person)
+### Some pictures on a Trinitron KV-29FS120
 
 ![](https://i.postimg.cc/T3yT0Qs6/quake2.jpg)
 ![](https://i.postimg.cc/DzLnk0Fp/quake3.jpg)
