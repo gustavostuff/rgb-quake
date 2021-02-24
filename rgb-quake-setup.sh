@@ -27,8 +27,8 @@ default='\033[0m'
 
 cd ~
 
-read -p 'Install original Quake I config files? [Y/n]' answer
-answer=${name:-y}
+read -p 'Install original Quake I config files? [Y/n]:' answer
+answer=${answer:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake.tar.gz
@@ -38,8 +38,8 @@ if [ $answer = 'y' ]; then
   separator
 fi
 
-read -p 'Install Scourge of Armagon launcher? [Y/n]' answer
-answer=${name:-y}
+read -p 'Install Scourge of Armagon launcher? [Y/n]:' answer
+answer=${answer:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_1.tar.gz
@@ -49,8 +49,8 @@ if [ $answer = 'y' ]; then
   separator
 fi
 
-read -p 'Install Dissolution of Eternity launcher? [Y/n]' answer
-answer=${name:-y}
+read -p 'Install Dissolution of Eternity launcher? [Y/n]:' answer
+answer=${answer:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
   wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_2.tar.gz
