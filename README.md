@@ -15,3 +15,6 @@
 * [Quake](https://en.wikipedia.org/wiki/Quake_(video_game))
 * [Raspberry Pi](https://www.raspberrypi.org/)
 * [RetroPie](https://retropie.org.uk/)
+
+
+**Please note**, pak files are not included, you'll have to grab them from another Quake installation

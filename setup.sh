@@ -13,20 +13,38 @@ function separator () {
 }
 
 cd ~
+yes='no'
 
-echo "Downloading original Quake I..."
-sudo wget https://github.com/tavuntu/crt-ready-retropie/raw/main/crt-ready-retropie-config.tar.gz
-separator
+echo 'Install original Quake I? [y/n]'
+read answer
+if [ '$answer' = 'y' ]; then
+  echo "Downloading..."
+  sudo wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake.tar.gz
+  sudo tar -xf quake.tar.gz
+  yes='yes'
+  separator
+fi
 
-echo "Decompressing crt-ready-retropie-config.tar.gz..."
-echo "(ownership error is expected)"
-sudo tar -zxf crt-ready-retropie-config.tar.gz
-separator
+echo 'Install Scourge of Armagon expansion? [y/n]'
+read answer
+if [ '$answer' = 'y' ]; then
+  echo "Downloading..."
+  sudo wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_1.tar.gz
+  sudo tar -xf quake_mission_pack_1.tar.gz
+  yes='yes'
+  separator
+fi
 
-echo "Deleting crt-ready-retropie-config.tar.gz..."
-sudo rm crt-ready-retropie-config.tar.gz
-separator
+echo 'Install Dissolution of Eternity expansion? [y/n]'
+read answer
+if [ '$answer' = 'y' ]; then
+  echo "Downloading..."
+  sudo wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_2.tar.gz
+  sudo tar -xf quake_mission_pack_2.tar.gz
+  yes='yes'
+  separator
+fi
 
-echo "Restoring directory and files ownership..."
-sudo chmod a+rw -R /opt/retropie/configs/ && sudo chmod a+rwx /opt/retropie/configs/all/*.sh
-separator
+if [ '$yes' = 'no' ]; then
+  echi "Nothing? Pfft... your loss."
+fi
