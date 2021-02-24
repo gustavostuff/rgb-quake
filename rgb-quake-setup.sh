@@ -20,6 +20,20 @@ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFT
 function separator () {
   echo "******************************************************************"
 }
+
+function download_quake_launcher () {
+  read -p $1 answer
+  answer=${answer:-y}
+  if [ $answer = 'y' ]; then
+    echo "Downloading..."
+    wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/$2
+    tar -xf $2
+    installed='yes'
+    
+    separator
+  fi
+}
+
 installed='no'
 red='\033[0;31m'
 green='\033[0;32m'
@@ -27,38 +41,9 @@ default='\033[0m'
 
 cd ~
 
-read -p 'Install original id1 Quake? (pak0 only) [Y/n]:' answer
-answer=${answer:-y}
-if [ $answer = 'y' ]; then
-  echo "Downloading..."
-  wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake.tar.gz
-  tar -xf quake.tar.gz
-  installed='yes'
-  
-  separator
-fi
-
-read -p 'Install Scourge of Armagon launcher? (no pak files) [Y/n]:' answer
-answer=${answer:-y}
-if [ $answer = 'y' ]; then
-  echo "Downloading..."
-  wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_1.tar.gz
-  tar -xf quake_mission_pack_1.tar.gz
-  installed='yes'
-
-  separator
-fi
-
-read -p 'Install Dissolution of Eternity launcher? (no pak files) [Y/n]:' answer
-answer=${answer:-y}
-if [ $answer = 'y' ]; then
-  echo "Downloading..."
-  wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/quake_mission_pack_2.tar.gz
-  tar -xf quake_mission_pack_2.tar.gz
-  installed='yes'
-  
-  separator
-fi
+download_quake_launcher 'Install original id1 Quake? (pak0 only) [Y/n]:' 'quake.tar.gz'
+download_quake_launcher 'Install Scourge of Armagon launcher? (no pak files) [Y/n]:' 'quake_mission_pack_1.tar.gz'
+download_quake_launcher 'Install Dissolution of Eternity launcher? (no pak files) [Y/n]:' 'quake_mission_pack_2.tar.gz'
 
 # remove installation script
 rm rgb-quake-setup.sh
