@@ -77,4 +77,5 @@ else
   rm rgb-quake-setup.sh
   rm RetroPie/roms/ports/Quake.sh
   rm -rf RetroPie/roms/ports/quake/
+  rm -rf RetroPie/roms/ports/Quake/
 fi
