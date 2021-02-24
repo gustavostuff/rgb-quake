@@ -73,8 +73,11 @@ else
 fi
 
 separator
-echo 'Cleaning...'
+
+# cleaning:
 rm quake.tar.gz
 rm quake_mission_pack_1.tar.gz
 rm quake_mission_pack_2.tar.gz
 rm rgb-quake-setup.sh
+rm RetroPie/roms/ports/Quake.sh
+rm -rf RetroPie/roms/ports/quake/
