@@ -27,7 +27,7 @@ default='\033[0m'
 
 cd ~
 
-read -p 'Install original Quake I? (pak0 only) [Y/n]:' answer
+read -p 'Install original id1 Quake? (pak0 only) [Y/n]:' answer
 answer=${answer:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
