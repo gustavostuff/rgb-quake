@@ -22,7 +22,7 @@ function separator () {
 }
 
 function download_quake_launcher () {
-  read -p $1 answer
+  read -p "$1" answer
   answer=${answer:-y}
   if [ $answer = 'y' ]; then
     echo "Downloading..."
