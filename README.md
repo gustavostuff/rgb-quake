@@ -1,4 +1,4 @@
-[![logo-rgb-quake.png](https://i.postimg.cc/DZqBQkhM/logo-rgb-quake.png)](https://postimg.cc/hztLgYfL)
+[![logo-rgb-quake.png](https://i.postimg.cc/Y0XvQPG2/logo-rgb-quake.png)](https://postimg.cc/9w7XhJYs)
 
 ## Pixel-perfect libretro TyrQuake for RGB-Pi OS
 
@@ -12,15 +12,15 @@ wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/rgb-quake
 ```
 * Follow the instructions and enjoy!
 
-**PLEASE NOTE:** .pak files are not included, you'll have to grab them from another Quake installation. The files must be placed in ~/quake/ as follows:
+**PLEASE NOTE:** only Shareware pak0 will be available for the original id1 Quake, the other ones need to be grabbed from somewhere else and placed as follows:
 
-* ~/quake/id1/ - for the original Quake
-* ~/quake/mp1/ - for Scourge of Armagon
-* ~/quake/mp2/ - for Dissolution of Eternity
+* ~/quake/id1/ - for id1 Quake (pak1.pak will be missing)
+* ~/quake/mp1/ - for Scourge of Armagon (pak0.pak, pak1.pak and pak2.pak)
+* ~/quake/mp2/ - for Dissolution of Eternity (pak0.pak, pak1.pak and pak2.pak)
 
 ---
 
-Some pictures on a Trinitron KV-29FS120
+Some pictures on a Trinitron KV-29FS120 (not a good Camera, it looks better in person)
 
 ![](https://i.postimg.cc/T3yT0Qs6/quake2.jpg)
 ![](https://i.postimg.cc/DzLnk0Fp/quake3.jpg)

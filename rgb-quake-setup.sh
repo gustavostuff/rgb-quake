@@ -27,7 +27,7 @@ default='\033[0m'
 
 cd ~
 
-read -p 'Install original Quake I config files? [Y/n]:' answer
+read -p 'Install original Quake I? (pak0 only) [Y/n]:' answer
 answer=${answer:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
@@ -38,7 +38,7 @@ if [ $answer = 'y' ]; then
   separator
 fi
 
-read -p 'Install Scourge of Armagon launcher? [Y/n]:' answer
+read -p 'Install Scourge of Armagon launcher? (no pak files) [Y/n]:' answer
 answer=${answer:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
@@ -49,7 +49,7 @@ if [ $answer = 'y' ]; then
   separator
 fi
 
-read -p 'Install Dissolution of Eternity launcher? [Y/n]:' answer
+read -p 'Install Dissolution of Eternity launcher? (no pak files) [Y/n]:' answer
 answer=${answer:-y}
 if [ $answer = 'y' ]; then
   echo "Downloading..."
@@ -60,6 +60,7 @@ if [ $answer = 'y' ]; then
   separator
 fi
 
+# remove installation script
 rm rgb-quake-setup.sh
 
 if [ $installed = 'no' ]; then
@@ -67,14 +68,17 @@ if [ $installed = 'no' ]; then
 else
   echo -e "${green}Installing now libretro TyrQuake...${default}"
   sudo bash ~/RetroPie-Setup/retropie_packages.sh lr-tyrquake
+  echo 'Installing now id1 pak0...'
+  mv ~/RetroPie/roms/ports/quake/id1/pak0.pak ~/quake/id1/
 
   separator
   echo -e "${green}Done! Now go to RGB-Pi options screen and do a game search.${default}"
-  echo -e "${red}Remember: .pak files are not included!${default}"
+  echo -e "${red}Remember: only pak0 for id1 Quake is included!${default}"
   separator
+  echo ''
   echo 'For more info go to github.com/tavuntu/quake-for-rgb-pi'
 
-  # cleaning:
+  # more cleaning:
   rm quake*tar.gz
   rm RetroPie/roms/ports/Quake.sh
   rm -rf RetroPie/roms/ports/quake/
