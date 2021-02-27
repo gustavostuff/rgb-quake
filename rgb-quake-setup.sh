@@ -41,7 +41,7 @@ default='\033[0m'
 
 cd ~
 
-download_quake_launcher 'Install original id1 Quake? (pak0 only) [Y/n]:' 'quake.tar.gz'
+download_quake_launcher 'Install original id1 Quake? (Shareware pak0 only) [Y/n]:' 'quake.tar.gz'
 download_quake_launcher 'Install Scourge of Armagon launcher? (no pak files) [Y/n]:' 'quake_mission_pack_1.tar.gz'
 download_quake_launcher 'Install Dissolution of Eternity launcher? (no pak files) [Y/n]:' 'quake_mission_pack_2.tar.gz'
 
