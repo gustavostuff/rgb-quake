@@ -12,9 +12,9 @@ wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/rgb-quake
 ```
 * Follow the instructions and enjoy!
 
-**PLEASE NOTE:** only Shareware pak0 will be available for the original id1 Quake, the other ones need to be grabbed from somewhere else and placed as follows:
+**PLEASE NOTE:** only Shareware pak0 will be available for the original id1 Quake, the "full" versions need to be grabbed from somewhere else and placed as follows:
 
-* ~/quake/id1/ - for id1 Quake (pak1.pak will be missing)
+* ~/quake/id1/ - for id1 Quake (pak0.pak and pak1.pak)
 * ~/quake/mp1/ - for Scourge of Armagon (pak0.pak, pak1.pak and pak2.pak)
 * ~/quake/mp2/ - for Dissolution of Eternity (pak0.pak, pak1.pak and pak2.pak)
 
