@@ -26,7 +26,7 @@ function download_quake_launcher () {
   answer=${answer:-y}
   if [ $answer = 'y' ]; then
     echo "Downloading..."
-    wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/$2
+    wget https://raw.githubusercontent.com/tavuntu/rgb-quake/master/$2
     tar -xf $2
     installed='yes'
     
@@ -53,12 +53,11 @@ if [ $installed = 'no' ]; then
 else
   echo -e "${green}Installing now libretro TyrQuake...${default}"
   sudo bash ~/RetroPie-Setup/retropie_packages.sh lr-tyrquake
-  echo 'Installing now id1 pak0...'
   mv ~/RetroPie/roms/ports/quake/id1/pak0.pak ~/quake/id1/
 
   separator
   echo -e "${green}Done! Now go to RGB-Pi options screen and do a game search.${default}"
-  echo -e "${red}Remember: only pak0 for id1 Quake is included!${default}"
+  echo -e "${red}Remember: only Shareware pak0 for id1 Quake is included!${default}"
   separator
   echo ''
   echo 'For more info go to github.com/tavuntu/rgb-quake'
