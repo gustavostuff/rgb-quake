@@ -9,7 +9,7 @@
 * Run:
 
 ```
-wget https://raw.githubusercontent.com/tavuntu/quake-for-rgb-pi/master/rgb-quake-setup.sh && chmod +x rgb-quake-setup.sh && ./rgb-quake-setup.sh
+wget https://raw.githubusercontent.com/tavuntu/rgb-quake/master/rgb-quake-setup.sh && chmod +x rgb-quake-setup.sh && ./rgb-quake-setup.sh
 ```
 * Follow the instructions and enjoy!
 
